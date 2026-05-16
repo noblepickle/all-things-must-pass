@@ -61,14 +61,69 @@ hr {
 }
 
 /* Cover */
-img {
+header img {
     margin: 5rem 0 0 0;
     user-select: none;
-    
 }
 
 /* Content */
 p {
     font-size: 2rem;
     word-spacing: -0.15em;
+}
+
+.length {
+    font-size: 0.7em;
+    font-family:'Times New Roman', Times, serif
+}
+
+/* Spotify Button */
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 50;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button img {
+    width: 48px;
+    height: auto;
+    display: block;
+}
+
+/* Mobile / small screens */
+@media (max-width: 600px) {
+    :root { font-size: 14px; }
+
+    header { height: 80vh; }
+
+    h1,
+    h2 {
+        font-size: 1.6rem;
+        line-height: 0.9;
+        word-spacing: -0.18em;
+    }
+
+    h1 { margin: 10vh 0 0.8rem 0; }
+
+    p { font-size: 1.25rem; }
+
+    header img { margin: 2rem 0 0 0; max-width: 90%; height: auto; }
+
+    button img { width: 40px; }
+
+    body { min-height: 200vh; padding: 0 1rem; }
 }
