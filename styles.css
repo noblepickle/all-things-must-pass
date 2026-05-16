@@ -1,0 +1,65 @@
+@import url('./fonts/fonts.css');
+
+:root{
+    font-size: 16px;
+
+    /* Colors */
+    --background: #EAEED8;
+    --primary: #000;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'AbbottOldStyle', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 0 0;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 4;
+    height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+h1,
+h2 {
+    font-size: 3rem;
+    line-height: 0.2;
+}
+
+h1 {
+    margin: 20vh 0 0 0;
+}
+
+.heading {
+    width: fit-content;
+}
+
+hr {
+    height: 2px;
+    color: var(--primary);
+    background-color: var(--primary);
+}
+
+/* Cover */
+img {
+    margin: 5rem 0 0 0;
+    user-select: none;
+    
+}
+
+/* Content */

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'AbbottOldStyle';
+  src: url('./abbottoldstyle.woff') format('woff'),
+       url('./abbottoldstyle.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
